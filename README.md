@@ -1,4 +1,4 @@
-# Lab02_Light
+# Lecture4_Light
 
 Source code and resources for the second lab on **Interaction Technologies** at FH Salzburg.
 
