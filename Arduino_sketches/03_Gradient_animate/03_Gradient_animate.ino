@@ -10,13 +10,12 @@ CRGB leds[NUM_LEDS];
 
 // Create a gradient palette 
 // |-----------------------|
-// BLUE...RED...BLUE
-DEFINE_GRADIENT_PALETTE(blue_red_p){
-  0,    0,   0, 255,
-  127,  255, 0, 0,
-  255,  0, 0, 255
-};
-CRGBPalette256 my_gradient = blue_red_p; 
+// GREEN......RED.......BLUE
+CRGBPalette256 my_gradient = CRGBPalette256(
+	CRGB::Green,
+	CRGB::Blue,
+	CRGB::Red
+); 
 
 void setup() { 
   // Neopixel ring is WS2812B chipset, GRB ordering
