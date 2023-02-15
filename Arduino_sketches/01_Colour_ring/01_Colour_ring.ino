@@ -11,6 +11,7 @@ CRGB leds[NUM_LEDS];
 void setup() { 
   // Neopixel ring is WS2812B chipset, GRB ordering
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
+  FastLED.setBrightness(100);
   FastLED.clear();
 }
 

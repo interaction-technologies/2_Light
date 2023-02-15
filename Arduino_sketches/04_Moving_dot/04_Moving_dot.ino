@@ -11,6 +11,7 @@ CRGB leds[NUM_LEDS];
 void setup() { 
    // 8mm Neopixel pins are WS2812B chipset, RGB ordering
    FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
+   FastLED.setBrightness(100);
    FastLED.clear();
 }
 
